@@ -30,13 +30,29 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+.map passes each element in turn into the callback and returns a new array of elements. .forEach calls a provided function on each element in the array, but doesn’t actually return a new array.  
+
 2. What is the difference between a function and a method?
+
+A function is a series of instructions used to turn input into output. A method is a specific type of function that is stored as an object property.
 
 3. What is closure?
 
+In Javascript, functions have access to the scope in which they are defined. In other words, inner functions can access variables created in the outer functions in which they were defined.
+
 4. Describe the four rules of the 'this' keyword.
 
+-window binding - the "this" keyword always attempts to reference the window object, unless it's bound to something more specific through the rules of implicit, explicit or new binding.
+
+-new binding - when we create a new object by invoking a function with the "new" keyword, the "this" keyword is bound to the new object.
+
+-explicit binding - we use .call, .apply, or .bind to tell the function being invoked what the context of the "this" keyword is.
+
+-implicit binding - the "this" keyword refers to whatever object is to the left of the dot when our function is invoked.
+
 5. Why do we need super() in an extended class?
+
+In class inheritance, super() is what sets the parent class (or super class) properties onto the child class (or sub class).
 
 ## Project Set up
 
@@ -65,11 +81,11 @@ Your finished project must include all of the following requirements:
 **Pro tip for this challenge: If something seems like it isn't working locally, copy and paste your code up to codepen and take another look at the console.**
 
 ## Task 1: Objects and Arrays
-Test your knowledge of objects and arrays. 
+Test your knowledge of objects and arrays.
 * [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
 ## Task 2: Functions
-This challenge takes a look at callbacks and closures as well as scope. 
+This challenge takes a look at callbacks and closures as well as scope.
 * [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
 ## Task 3: Prototypes
